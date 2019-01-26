@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ec8cb06acd429688fe5ff2094cb680a",
+    "content-hash": "551565e82efa55dfea62c5bcd708cb9d",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -390,6 +390,91 @@
                 "rfc4648"
             ],
             "time": "2018-11-02T09:03:50+00:00"
+        },
+        {
+            "name": "cloudinary/cloudinary-magento2",
+            "version": "1.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_magento2.git",
+                "reference": "0efe399d576daa703a7fe71e9d9613bd0c170ba9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_magento2/zipball/0efe399d576daa703a7fe71e9d9613bd0c170ba9",
+                "reference": "0efe399d576daa703a7fe71e9d9613bd0c170ba9",
+                "shasum": ""
+            },
+            "require": {
+                "cloudinary/cloudinary_php": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Cloudinary\\Cloudinary\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cloudinary Magento 2 Integration.",
+            "time": "2019-01-14T10:22:45+00:00"
+        },
+        {
+            "name": "cloudinary/cloudinary_php",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudinary/cloudinary_php.git",
+                "reference": "442cba07f093cdc060038628daa67f013e3dc792"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/442cba07f093cdc060038628daa67f013e3dc792",
+                "reference": "442cba07f093cdc060038628daa67f013e3dc792",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ],
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cloudinary",
+                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
+                }
+            ],
+            "description": "Cloudinary PHP SDK",
+            "homepage": "https://github.com/cloudinary/cloudinary_php",
+            "keywords": [
+                "cdn",
+                "cloud",
+                "cloudinary",
+                "image management",
+                "sdk"
+            ],
+            "time": "2018-12-16T15:58:27+00:00"
         },
         {
             "name": "colinmollenhour/cache-backend-file",
