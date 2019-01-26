@@ -1,2 +1,5 @@
 .DS_Store
 /.idea
+/src//vendor/*
+!/src//vendor/cloudinary/*
+!/src//vendor/.htaccess
