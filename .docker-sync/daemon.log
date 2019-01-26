@@ -1,0 +1,18 @@
+          ok  Starting native_osx for sync magento2-sync
+          ok  magento2-sync container still running, restarting unison in container
+     command  docker exec magento2-sync supervisorctl restart unison
+unison: stopped
+unison: started
+          ok  starting initial sync of magento2-sync
+     success  Sync container started
+     success  Showing unison logs from your sync container: magento2-sync
+[2019-01-26 05:21:53 +0400] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 04:52:17.64 on 26 Jan 2019
+[2019-01-26 05:21:53 +0400] Sync Log:  [BGN] Copying var/resource_config.json from /app_sync to /host_sync
+[2019-01-26 05:21:53 +0400] Sync Log:  [END] Copying var/resource_config.json
+[2019-01-26 05:21:53 +0400] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 04:52:17.65 on 26 Jan 2019
+[2019-01-26 05:21:53 +0400] Sync Log:  Synchronization complete at 04:52:17  (1 item transferred, 0 skipped, 0 failed)
+[2019-01-26 05:21:53 +0400] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 05:00:41.30 on 26 Jan 2019
+[2019-01-26 05:21:53 +0400] Sync Log:  [BGN] Copying .DS_Store from /host_sync to /app_sync
+[2019-01-26 05:21:53 +0400] Sync Log:  [END] Copying .DS_Store
+[2019-01-26 05:21:53 +0400] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 05:00:41.30 on 26 Jan 2019
+[2019-01-26 05:21:53 +0400] Sync Log:  Synchronization complete at 05:00:41  (1 item transferred, 0 skipped, 0 failed)
