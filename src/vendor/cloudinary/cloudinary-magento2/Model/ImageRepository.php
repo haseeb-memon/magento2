@@ -15,6 +15,8 @@ use Magento\Framework\Filesystem\Directory\ReadInterface;
  */
 class ImageRepository
 {
+    const   SKIP_DOTS             = 4096 ;
+
     private $allowedImgExtensions = ['JPG', 'PNG', 'GIF', 'BMP', 'TIFF', 'EPS', 'PSD', 'SVG', 'WebP'];
 
     /**
@@ -61,7 +63,7 @@ class ImageRepository
     private function getRecursiveIterator($directory)
     {
         return new \RecursiveIteratorIterator(
-            new \RecursiveDirectoryIterator($directory),
+            new \RecursiveDirectoryIterator($directory,self::SKIP_DOTS),
             \RecursiveIteratorIterator::SELF_FIRST
         );
     }
